@@ -200,7 +200,6 @@ void showresult(Student students[], int *numStudents)
         
     }
     //*numStudents=0;
-    // Read student data from the file
     while (fscanf(file, "%s %d", students[*numStudents].name, &students[*numStudents].score) == 2) 
     {
       
@@ -209,17 +208,13 @@ void showresult(Student students[], int *numStudents)
     }
     //printf("%d",*numStudents);
     
-    // Calculate rankings
+    
     calculateRankings(students, *numStudents);
-
-    // Display results
     printf("\nResults:\n");
     printf("Name\t\tScore\tRanking\n");
     for (int i = 0; i < *numStudents; i++) {
         printf("%s\t\t%d\t%d\n", students[i].name, students[i].score, students[i].ranking);
     }
-
-    // Calculate and display class average
     float classAverage = calculateClassAverage(students, *numStudents);
     printf("\nClass Average: %.2f\n", classAverage);
     fclose(file);
