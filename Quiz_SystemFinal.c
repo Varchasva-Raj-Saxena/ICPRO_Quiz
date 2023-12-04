@@ -208,7 +208,7 @@ void showresult(Student students[], int *numStudents)
         
     }
     //printf("%d",*numStudents);
-    fclose(file);
+    
     // Calculate rankings
     calculateRankings(students, *numStudents);
 
@@ -218,10 +218,11 @@ void showresult(Student students[], int *numStudents)
     for (int i = 0; i < *numStudents; i++) {
         printf("%s\t\t%d\t%d\n", students[i].name, students[i].score, students[i].ranking);
     }
-
+    
     // Calculate and display class average
     float classAverage = calculateClassAverage(students, *numStudents);
     printf("\nClass Average: %.2f\n", classAverage);
+    fclose(file);
 }
 int main() 
 {
