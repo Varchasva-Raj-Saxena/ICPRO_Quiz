@@ -218,7 +218,7 @@ void showresult(Student students[], int *numStudents)
     for (int i = 0; i < *numStudents; i++) {
         printf("%s\t\t%d\t%d\n", students[i].name, students[i].score, students[i].ranking);
     }
-    
+
     // Calculate and display class average
     float classAverage = calculateClassAverage(students, *numStudents);
     printf("\nClass Average: %.2f\n", classAverage);
@@ -261,7 +261,7 @@ int main()
                 default:
                     printf("Invalid choice. Please enter a valid option.\n");
             }
-        } while (choice != 4);
+        } while (choice != 5);
  
 
     return 0;
