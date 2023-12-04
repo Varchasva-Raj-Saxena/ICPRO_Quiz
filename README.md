@@ -5,7 +5,7 @@ Table of Contents
 
     Features
     How to Use
-    Admin Authentication
+    Add Questions
     File Operations
     Quiz Conduct
     Viewing Results
@@ -24,7 +24,7 @@ Features
         You will also get an explanation of each question after answering it.
 
     See Results
-        View individual student scores, rankings, and the class average.
+        View student scores, rankings, and the class average.
 
 How to Use
 
@@ -33,7 +33,7 @@ How to Use
         Add a question: Input new quiz questions and answers.
         Save quiz data to file: Store the created quiz for future use.
         Conduct the quiz: Load quiz data and answer questions.
-        See results: View individual scores, rankings, and the class average.
+        See results: View scores, rankings, and the class average.
 
 
 File Operations
